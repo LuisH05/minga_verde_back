@@ -7,12 +7,12 @@ let schema = new mongoose.Schema({
     hover: {type:String, required:true},
     description: {type:String, required:true},
     cover_photo: {type:String, required:true},
-    charancter_photo: {type:String, required:true},
+    character_photo: {type:String, required:true},
 },{
     timestamps: true
 })
 let collection = 'categories'
 
-let Category = mongoose.model(schema,collection)
+let Category = mongoose.model(collection,schema)
 
 export default Category
