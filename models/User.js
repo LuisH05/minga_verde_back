@@ -6,15 +6,15 @@ let schema = new mongoose.Schema({
     password: {type:String, required:true},
     photo: {type:String, required:true},
     role: {type:Number, required:true},
-    is_oline: {type:Boolean, required:true},
+    is_online: {type:Boolean, required:true},
     is_verified: {type:Boolean, required:true},
-    verify_code: {typeof:String, required:true},
+    verify_code: {type:String, required:true},
 },{
     timestamps: true
 })
 let collection = 'users'
 
 
-let users = mongoose.model(schema,collection)
+let users = mongoose.model(collection,schema)
 
 export default users

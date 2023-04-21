@@ -1,8 +1,8 @@
-import {Schema,model, Types} from "mongoose";
+import {Schema,model,Types} from "mongoose";
 
 let schema = new Schema({
-    name:{type:String,required:true},
-    last_name: {type:String,required:false},
+    name:{type: String, required:true},
+    last_name: {type: String, required:false},
     city: {type:String,required:true},
     country: {type:String,required:true},
     date: {type:Date}, //por defecto es false si no aclaro que es requerido
@@ -13,11 +13,11 @@ let schema = new Schema({
         required:true
     }, 
 },{
-    timestamps:true,
+    timestamps:true
 })
 
 let collection = 'authors'
 
-let Author = model(schema,collection)
+let Author = model(collection,schema)
 
 export default Author
