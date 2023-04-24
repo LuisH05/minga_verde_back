@@ -14,7 +14,6 @@ let schema = new mongoose.Schema({
 })
 let collection = 'users'
 
-
 let users = mongoose.model(collection,schema)
 
 export default users
