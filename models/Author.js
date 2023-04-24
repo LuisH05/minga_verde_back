@@ -19,4 +19,5 @@ let schema = new Schema({
 let collection = 'authors'
 
 let Author = model(collection,schema)
+
 export default Author
