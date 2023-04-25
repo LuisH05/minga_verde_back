@@ -4,7 +4,6 @@ import Category from './../../models/Category.js'
 // utilizo la sintaxis de try/catch para intentar algo y catchear los errores
 //utilizo el metodo find para buscar los recursos del modelo
 //configurola respuesta que le tengo que enviar al cliente (front) 
-
 let read = async(req, res, next) => { 
   try{        
     let all = await Category.find()

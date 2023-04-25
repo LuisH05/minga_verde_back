@@ -14,5 +14,4 @@ let schema = new mongoose.Schema({
 let collection = 'categories'
 
 let Category = mongoose.model(collection,schema)
-
 export default Category
